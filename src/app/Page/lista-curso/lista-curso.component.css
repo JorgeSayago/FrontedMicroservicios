@@ -1,0 +1,25 @@
+/* Agrega estos estilos en tu archivo CSS */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #FFA500; /* Naranja */
+  }
+  
+  thead {
+    background-color: #FF8C00; /* Naranja oscuro para encabezado */
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:hover {
+    background-color: #FFD700; /* Amarillo claro al pasar el ratón por encima */
+  }
+  
+  

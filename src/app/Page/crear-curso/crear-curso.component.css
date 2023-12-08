@@ -1,0 +1,21 @@
+/* Agrega estos estilos en tu archivo CSS */
+
+#contact {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-field {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    width: 100%;
+  }
+  

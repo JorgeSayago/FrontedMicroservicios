@@ -1,0 +1,22 @@
+<!-- listar-personas.component.html -->
+
+<table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Nombre</th>
+        <th>horas</th>
+        <th>area</th>
+        <th>Profesor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let curso of listadoClientesWS">
+        <td>{{ curso.id }}</td>
+        <td>{{ curso.nombre }}</td>
+        <td>{{ curso.horas }}</td>
+        <td>{{ curso.area }}</td>
+        <td>{{ curso.profesor.nombre }}</td>
+      </tr>
+    </tbody>
+  </table>

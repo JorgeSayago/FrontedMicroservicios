@@ -1,0 +1,18 @@
+<table>
+    <thead>
+      <tr>
+        <th>cedula</th>
+        <th>Nombre</th>
+        <th>apellido</th>
+        <th>Titulo/th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let profesor of listadoClientesWS">
+        <td>{{ profesor.cedula }}</td>
+        <td>{{ profesor.nombre }}</td>
+        <td>{{ profesor.apellido }}</td>
+        <td>{{ profesor.titulo }}</td>
+      </tr>
+    </tbody>
+  </table>
