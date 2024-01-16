@@ -4,7 +4,7 @@ import { Curso } from '../Domain/curso';
 import { Observable } from 'rxjs';
 
 
-const urlBase="http://localhost:8081/MS1/Curso/";
+const urlBase="http://34.125.83.82:8080/microservicios-rs/api/cursos/";
 @Injectable({
   providedIn: 'root'
 })

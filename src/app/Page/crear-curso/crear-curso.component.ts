@@ -12,7 +12,6 @@ import { CursoService } from 'src/app/services/curso.service';
 export class CrearCursoComponent {
 
   curso: Curso= new Curso();
-  profesor: Profesor= new Profesor();
 
   constructor(private cursoService: CursoService,
     private router: Router) {
@@ -24,19 +23,12 @@ export class CrearCursoComponent {
         this.curso = params['curso']
       }
 
-      let params2 = this.router.getCurrentNavigation()?.extras.queryParams;
-      if(params2){
-        console.log(params)
-        this.profesor= new Profesor()
-        this.profesor = params2['profesor']
-      }
     }
     
 
 
     guardar(){
       console.log(this.curso)
-      this.curso.profesor=this.profesor
       this.cursoService.save(this.curso).subscribe((data)=>{
         console.log("resultado POST: ", data)
         this.router.navigate(["pagina/ListaCurso"]);

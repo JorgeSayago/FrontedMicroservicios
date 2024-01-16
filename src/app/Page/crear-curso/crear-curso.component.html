@@ -3,25 +3,25 @@
     <form>
       <mat-form-field class="form-field" >
         <mat-label>nombre:</mat-label>
-        <input matInput type="text" name="nombre" placeholder="nombre.." [(ngModel)]="curso.nombre">
+        <input matInput type="text" name="nombre" placeholder="algebra.." [(ngModel)]="curso.nombre">
       </mat-form-field>
   
+      <mat-form-field class="form-field">
+        <mat-label>Area:</mat-label>
+        <input matInput type="text" name="area" placeholder="matematicas..." [(ngModel)]="curso.area">
+      </mat-form-field>
   
       <mat-form-field class="form-field">
+        <mat-label>Descripcion:</mat-label>
+        <input matInput type="text" name="area" placeholder="detalle del curso" [(ngModel)]="curso.descripcion">
+      </mat-form-field>
+
+      <mat-form-field class="form-field">
         <mat-label>horas:</mat-label>
-        <input matInput type="int" name="horas" placeholder="horas..." [(ngModel)]="curso.horas">
+        <input matInput type="int" name="horas" placeholder="120..." [(ngModel)]="curso.horas">
       </mat-form-field>
       <br>
 
-      <mat-form-field class="form-field">
-        <mat-label>Area:</mat-label>
-        <input matInput type="text" name="area" placeholder="Area..." [(ngModel)]="curso.area">
-      </mat-form-field>
-
-      <mat-form-field class="form-field">
-        <mat-label>Profesor:</mat-label>
-        <input matInput type="text" name="area" placeholder="cedula profesor..." [(ngModel)]="profesor.cedula">
-      </mat-form-field>
       <button mat-raised-button color="primary" (click)="guardar()">Crear</button>
     </form>
   </div>
