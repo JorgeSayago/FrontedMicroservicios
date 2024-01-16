@@ -1,7 +1,7 @@
 import { Profesor } from "./profesor";
 
 export class Curso{
-    id: number =0;
+    id?: number ;
     nombre:string='';
     area:string='';
     descripcion:string='';
