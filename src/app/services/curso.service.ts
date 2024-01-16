@@ -20,7 +20,7 @@ export class CursoService {
     console.log("curso: "+curso.id)
 
     const headers = new HttpHeaders({'Content-Type': 'application/json'})
-    return this.http.post<any>(urlBase+"guardar", JSON.stringify(curso), {headers})
+    return this.http.post<any>(urlBase+"nuevocurso", JSON.stringify(curso), {headers})
 
   }
 
